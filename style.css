@@ -1,0 +1,220 @@
+body{
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* navigation bar*/
+
+
+.home{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(10, 10, 10, 0.789), rgba(0, 0, 0, 0.458)),url("./netflix-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 75vh;
+
+}
+.nav-bar{
+    position: relative;
+ display: flex;
+ padding-top:15px;
+ justify-content: space-between;
+}
+
+.logo{
+    margin-left: 4vw;
+}
+
+.nav-buttons{
+    display: flex;
+    width: 20vw;
+    margin-right: 5px;
+    margin-top: 5px;
+    justify-content: space-around;
+}
+.language-btn{
+    width:94px;
+    background: #33333311;
+    color: white;
+    border: 1px solid white;
+
+}
+.signin-link{
+    color: white;
+}
+.signin-link:link{
+    padding: 7px 17px;
+    padding-top: 9px;
+    background-color: red;
+    text-decoration: none;
+    color: rgb(121, 149, 149);
+    border-radius: 3px;
+}
+
+/* container element */
+
+.container{
+    position: relative;
+    align-self: center;
+    margin-top: 150px;
+    width: 700px;
+    height: 40vh;
+    
+
+}
+
+.container h1{
+    margin-bottom: 2vh;
+    font-size: 3.825rem;
+    font-weight: bold;
+    line-height: 1.1;
+}
+.container h2{
+    margin-bottom: 3vh;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.container p{
+    margin-bottom:2vh;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+form{
+   display: flex;
+   text-align: center;
+   margin-bottom: 50px;
+}
+ input{
+    width: 410px;
+    height: 57px;
+    margin-right: 0;
+    border:none;
+    border-radius: 2px;
+ }
+  form > button{
+    width: 250px;
+    height: 60px;
+    margin-left: 0;
+    background-color:#d71a1a;
+    color: white;
+    border: none;
+    font-size: 1.6rem;
+    border-radius: 2px;
+  }
+/* conternt */
+.line{
+    width: 100%;
+    height: 7px;
+    background-color: rgb(65, 64, 64);
+}
+.line-black{
+    width: 100%;
+    height:5px;
+    background-color: black;
+}
+
+.content{
+    display: flex;
+    height: 370px;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    overflow: hidden;
+    gap: 3rem;
+}
+
+.text-content{
+     width: 500px;
+     font-size: 1.5rem;
+     text-align: left;
+     
+}
+.text-content h2{
+    
+    font-size: 1.5rem;
+}
+ .image-content > img{
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    object-fit: cover;
+    overflow: hidden;
+ }
+
+ /* Faq section  */
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .flex > h1{
+    font-size: 3rem;
+ }
+ .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+ }
+ .qanda{
+    position: relative;;
+    list-style: none;
+    
+    width: 50vw;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #303030;
+    margin: 5px;
+
+ }
+
+ 
+
+ .qus{
+    
+    cursor: pointer;
+    
+    margin-top: 50px;
+    
+ }
+ .qus::after{
+    content: "+";
+    font-size: 3rem;
+    position: absolute;
+    right: 20px;
+    top:1px;
+    transition: transform 0.5s;
+ }
+
+ .answer{
+    
+    max-height: 0;
+    font-size: 2rem;
+    margin: 0;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    
+ }
+input[type="radio"]{
+    display: none;
+}
+ input:checked  + label + .answer{
+    
+    max-height: 600px;
+    padding: 30px 20px;
+ }
+ input:checked +label::after{
+    transform: rotate(135deg);
+ }
+
+ ul > p{
+    font-size: 1.2rem;
+ }
